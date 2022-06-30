@@ -1,8 +1,12 @@
 [package]
 name = "maybe_static"
+description="Initialize a lazy static with params"
 version = "0.1.0"
 edition = "2021"
-licence = "MIT"
+license = "MIT"
+authors = ["Adrien Zinger"]
+repository = "https://github.com/adrien-zinger/maybe_static"
+keywords = ["lazy", "static", "parameters"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
