@@ -25,10 +25,10 @@ macro_rules! maybe_static {
                 }
                 _ => ERR = true,
             });
-            if ERR {
-                return Err("error: maybe static require a filled option at the fist call");
+            match ERR {
+                _ => Ok(&*LAZY.0.as_ptr()), // you're sure that it's initialized here
+                true => Err("error: maybe static require a filled option at the fist call"),
             }
-            Ok(&*LAZY.0.as_ptr()) // you're sure that it's initialized here
         }
     }};
 }
