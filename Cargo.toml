@@ -1,12 +1,12 @@
 [package]
 name = "maybe_static"
-description="Initialize a lazy static with params"
-version = "0.1.2"
+description="Initialize a lazy static with params, create Meyer's singleton"
+version = "0.1.3"
 edition = "2021"
 license = "MIT"
 authors = ["Adrien Zinger"]
 repository = "https://github.com/adrien-zinger/maybe_static"
-keywords = ["lazy", "static", "parameters"]
+keywords = ["lazy", "static", "parameters", "singleton"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
